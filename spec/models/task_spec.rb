@@ -2,22 +2,32 @@ require 'rails_helper'
 
 RSpec.describe Task, :type => :model do
 
+  context 'Functionality' do
     it "can have a description" do
-      pending #TODO add can have a description test
+      task = Task.new(description: "This is a description")
+      expect(task).to be_valid
     end
     it "can be done" do
-      pending #TODO add can be done test
+      task = Task.new(description: "This is a description",done:true)
+      expect(task).to be_valid
     end
     it "can be undone" do
-      pending #TODO add can be undone test
+      task = Task.new(description: "This is a description",done:false)
+      expect(task).to be_valid
     end
     it "can be changed from done to undone" do
-      pending #TODO add can be changed from done to undone
+      task = Task.new(description: "This is a description",done:false)
+      task.save
+      task.done=false
+      task.valid?
+      expect(task).to be_valid
     end
 
+  end
 
 
-  describe "Validation" do
+
+  context "Validation" do
     it "is invalid without a description" do
       task = Task.new(description: nil)
       task.valid?

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails angularToDo: development" uuid="b513ce30-4786-40d1-9544-9912bfe15023">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails angularToDo: test" uuid="d22f6639-64e1-4e34-ae44-7a6b7bf3a6a9">
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>
