@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :task do
-    description "MyString"
+    description "This is a task"
     done false
   end
 end
